@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lead Capture Form</title>
+
+  <link rel="stylesheet" href="./assets/main.css">
+</head>
+
+<body>
+  <div class="form-outer">
+    <div class="form-container">
+      <h1 class="form-title">Lead Capture Form</h1>
+      <form id="myForm" class="form">
+        <div class="form-body">
+          <div class="form-group">
+            <div class="label-wrapper">
+              <label for="email">Email Address <span class="star">*</span></label>
+            </div>
+            <div class="input-wrapper">
+              <input type="text" id="email" class="email" name="email" placeholder="Enter email address" required />
+              <label class="form-hint" for="email">example@example.com</label>
+              <div class="error-wrapper">
+                <img src="./assets/exclamation.png" alt="" class="error-icon" />
+                <span class="error" id="emailError"></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="label-wrapper">
+              <label for="firstName">First Name <span class="star">*</span></label>
+            </div>
+            <div class="input-wrapper">
+              <input type="text" id="firstName" class="firstName" name="firstName" placeholder="Enter first name" required minlength="4" maxlength="50" />
+              <div class="error-wrapper">
+                <img src="./assets/exclamation.png" alt="" class="error-icon" />
+                <span class="error" id="firstNameError"></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="label-wrapper">
+              <label for="lastName">Last Name <span class="star">*</span></label>
+            </div>
+            <div class="input-wrapper">
+              <input type="text" id="lastName" class="lastName" name="lastName" placeholder="Enter last name" required minlength="4" maxlength="50" />
+              <div class="error-wrapper">
+                <img src="./assets/exclamation.png" alt="" class="error-icon" />
+                <span class="error" id="lastNameError"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-submit-wrapper">
+          <button type="button" id="submit-btn" class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./assets/main.js"></script>
+</body>
+
+</html>
